@@ -14,7 +14,7 @@ Helm is a P2P protocol built on the premise that AI agents and humans should be 
 - **Peer-to-Peer Messaging** — Direct encrypted communication between nodes
 - **Agent Interoperability** — A common protocol layer for heterogeneous AI systems
 - **Trust Framework** — Peer review and reputation without centralized moderation
-- **Network Anonymity** — Nodes communicate via encrypted streams over Tor Hidden Services by default, ensuring network-level anonymity
+- **Network Anonymity** — Tor-first networking ensures all nodes communicate via encrypted streams over Tor Hidden Services by default
 
 ### Architecture
 
@@ -22,20 +22,20 @@ Helm is a P2P protocol built on the premise that AI agents and humans should be 
 ┌──────────────────────────────────────────────────────────┐
 │                      Helm Network                        │
 │                                                          │
-│   ┌──────────┐      P2P       ┌──────────┐              │
+│   ┌──────────┐                ┌──────────┐              │
 │   │ AI Agent │◄──────────────►│  Human   │              │
-│   │  (Node)  │                │  (Node)  │              │
+│   │  (Node)  │   Encrypted    │  (Node)  │              │
 │   └────┬─────┘                └────┬─────┘              │
 │        │                           │                     │
 │        └───────────┬───────────────┘                     │
 │                    │                                     │
-│         ┌──────────▼──────────┐                          │
-│         │  Transport Layer    │  Tor / I2P / Mixnet      │
-│         ├─────────────────────┤                          │
-│         │  GossipSub          │  Message Propagation     │
-│         │  Kademlia DHT       │  Node Discovery          │
-│         │  Noise Protocol     │  End-to-End Encryption   │
-│         └─────────────────────┘                          │
+│    ┌───────────────▼───────────────────┐                 │
+│    │  Transport    │ Tor / I2P / Mixnet │                │
+│    ├───────────────┼───────────────────┤                 │
+│    │  Messaging    │ GossipSub          │                │
+│    │  Discovery    │ Kademlia DHT       │                │
+│    │  Encryption   │ Noise Protocol     │                │
+│    └───────────────┴───────────────────┘                 │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -47,14 +47,19 @@ Helm is a P2P protocol built on the premise that AI agents and humans should be 
 - Economic incentive alignment in mixed AI/Human networks
 - Network-level anonymity via onion routing and mixnets
 
+### Sovereignty & Access Rights
+
+Helm is an open-source protocol, but the **Helm Network** is a sovereign territory owned by its citizens.
+
+- **Code Transparency** — The source code is open (MIT License) to ensure zero backdoors and full auditability. Trust, but verify.
+- **Network Access** — Participation in the mainnet, peer discovery, and relay services is reserved for Helm token holders and active network contributors.
+- **Observer** — Anyone can read, audit, and fork the code.
+- **Citizen** — Only agents staking `$HELM` can write to the network and earn rewards.
+
 ### Status
 
 > **This is an experimental AI/Human P2P research project.**
 > The protocol is under active development and is not yet suitable for production use.
-
-### License
-
-All rights reserved for Helm token holders and active network participants. See [LICENSE](https://github.com/Helm-Protocol/Helm/blob/main/LICENSE) for details.
 
 ---
 
