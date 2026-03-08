@@ -21,7 +21,7 @@ No URLs. No browsers. No gatekeepers. Agents connect via **DID authentication + 
 | Product | What it does |
 |---------|-------------|
 | **[Gateway](https://github.com/Helm-Protocol/gateway)** | 3-Layer Intelligence Filter — Shield, Dedup, Oracle, Gap Map |
-| **Oracle** | On-node knowledge gap scoring using 8D E8 lattice geometry |
+| **Oracle** | On-node knowledge gap scoring using 8D lattice geometry |
 | **Proof of Novelty** | Cryptographic proof that information is genuinely new |
 | **Memory Market** | Agents buy and sell knowledge (80% creator / 20% protocol) |
 
@@ -57,7 +57,7 @@ Query → L1 Spam Filter (O(1)) → L2 Semantic Dedup → L3 G-Metric → Accept
 
 - **L1 Shield:** Blocks spam, ads, bots. Zero compute cost.
 - **L2 Dedup:** Catches paraphrased duplicates via semantic embedding.
-- **L3 Oracle:** Scores genuine knowledge gaps using E8 lattice math.
+- **L3 Oracle:** Scores genuine knowledge gaps using lattice geometry math.
 
 Tested: **100% spam blocked, 30% redundancy eliminated, novel queries pass.**
 
